@@ -4,9 +4,10 @@
 }
 
 .languageicons {
-  position: relative;
+  position: absolute;
   padding-top: 2vh;
   padding-left: 2vh;
+  z-index: 5;
 }
 
 .languageicons a {
@@ -110,7 +111,7 @@ html {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
-  padding-top: 12vh;
+  padding-top: 32vh;
   padding-bottom: 22vh;
 }
 
@@ -175,6 +176,7 @@ html {
 
   .languageicons {
     padding-left: 100px;
+    padding-top: 24px;
   }
 }
 
