@@ -5,13 +5,20 @@
 
 .languageicons {
   position: absolute;
-  padding-top: 2vh;
+  padding-top: 2.5vh;
   padding-left: 2vh;
   z-index: 5;
 }
 
 .languageicons a {
   text-decoration: none;
+  color: black;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.languageicons a:hover {
+  color: white;
 }
 
 .navbar {
@@ -164,6 +171,11 @@ html {
 
 .ptext .border.trans {
   background-color: transparent;
+  text-shadow: 3px 3px 3px #000000;
+}
+
+#mc_embed_signup {
+  margin-left: 32vw;
 }
 
 @media (max-width: 768px) {
@@ -175,8 +187,13 @@ html {
   }
 
   .languageicons {
-    padding-left: 100px;
-    padding-top: 24px;
+    padding-left: 70px;
+    padding-top: 32px;
+  }
+
+  #mc_embed_signup {
+    margin-left: 8vw;
+    width: 70%;
   }
 }
 
