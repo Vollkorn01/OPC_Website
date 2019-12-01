@@ -153,6 +153,11 @@ h2 {
   min-height: 400px;
 }
 
+.newsimage img {
+  max-width: 100%;
+  height: auto;
+}
+
 .section {
   text-align: center;
   padding: 50px 40px;
