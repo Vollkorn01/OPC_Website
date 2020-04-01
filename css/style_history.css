@@ -5,8 +5,8 @@
 
 .languageicons {
   position: absolute;
-  padding-top: 2.5vh;
-  padding-left: 2vh;
+  right: 20px;
+  top: 32px;
   z-index: 5;
 }
 
@@ -14,7 +14,8 @@
   text-decoration: none;
   color: black;
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px black;
 }
 
 .languageicons a:hover {
@@ -35,6 +36,7 @@
   list-style: none;
   width: 100%;
   justify-content: center;
+  text-shadow: 2px 2px 4px black;
 }
 
 .navbar ul li {
@@ -54,6 +56,20 @@
   color: black;
 }
 
+.slogan {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 75%;
+  text-align: center;
+  color: #000;
+  font-size: 3rem;
+  letter-spacing: 10px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px #000000;
+  line-height: 1;
+}
+
 i.fab {
   color: black;
 }
@@ -65,7 +81,7 @@ i.fab:hover {
 .icons {
   margin-top: 80px;
   margin-bottom: 5vh;
-  padding-left: 28px;
+  padding-left: 40px;
 }
 
 .icons a {
@@ -73,13 +89,23 @@ i.fab:hover {
 }
 
 .donatebutton a {
-  font-weight: 580;
+  font-weight: 600;
   text-decoration: none;
   color: black;
-  background-color: rgba(255, 255, 255, 0.226);
+  background-color: rgba(255, 255, 255, 0.322);
   border: 5px solid black;
   border-radius: 15px;
+  position: absolute;
+  top: 75%;
+  left: 76%;
+  transform: translate(-76%, 0);
+  text-align: center;
   padding-left: 6px;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }
 
 .donatebutton a:hover {
@@ -92,21 +118,15 @@ html {
   height: 100%;
   margin: 0;
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
 }
 
-h2 {
-  font-size: 20px;
-}
-
 .pimg1,
 .pimg2,
-.pimg3,
-.pimg4,
-.pimg5 {
+.pimg3 {
   position: relative;
   opacity: 0.95;
   background-position: center;
@@ -114,18 +134,19 @@ h2 {
   background-repeat: no-repeat;
 
   /* fixed = parallax
-         scroll = normal
-      */
+     scroll = normal
+  */
   background-attachment: fixed;
 }
 
 .logocontainer {
-  background-image: url('../img/OPC_logo_hr_no_circle_half.png');
+  background-image: url('../img/opc_newlogo_small.png');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-
-  padding-top: 32vh;
-  padding-bottom: 22vh;
+  position: absolute;
+  left: 64px;
+  top: 16px;
+  width: 64px;
+  height: 64px;
 }
 
 .pimg1 {
@@ -139,7 +160,7 @@ h2 {
 }
 
 .pimg3 {
-  background-image: url('../img/aboutus_sectiontwo.jpg');
+  background-image: url('../img/news_sectionthree.JPG');
   min-height: 400px;
 }
 
@@ -175,17 +196,31 @@ h2 {
 
 .ptext {
   position: absolute;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 52px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 4px #000000;
+  line-height: 45px;
+}
+
+.picons {
+  position: absolute;
   top: 50%;
   width: 100%;
   text-align: center;
-  color: #000;
-  font-size: 27px;
+  color: rgb(255, 255, 255);
+  font-size: 44px;
   letter-spacing: 8px;
   text-transform: uppercase;
+
+  line-height: 40px;
 }
 
 .ptext .border {
-  background-color: #111;
   color: #fff;
   padding: 20px;
 }
@@ -195,71 +230,78 @@ h2 {
   text-shadow: 3px 3px 3px #000000;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 16px;
+.datebar {
+  top: 0;
+  z-index: 2;
+  display: inline;
+  width: 100%;
+  height: 60px;
 }
 
-.grid-container2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.datebar ul {
+  display: inline;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  text-shadow: 2px 2px 4px black;
 }
 
-.googlemaps_normal {
-  display: block;
+.datebar ul li {
+  padding: 1rem;
 }
 
-.googlemaps_small {
-  display: none;
+.datebar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.7rem;
+  font-size: 22px;
 }
 
-#mc_embed_signup {
-  margin-left: 32vw;
+#main-foot {
+  text-align: center;
+  line-height: 20px;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 20px;
 }
 
-@media (max-width: 768px) {
-  .logocontainer {
-    display: none;
-  }
+@media (max-width: 1580px) {
   .navbar {
     display: none;
   }
-
-  .languageicons {
-    padding-left: 18px;
-    padding-top: 66px;
-  }
-
-  #mc_embed_signup {
-    margin-left: 8vw;
-    width: 70%;
-  }
-
-  .googlemaps_normal {
-    display: none;
-  }
-
-  .googlemaps_small {
-    display: block;
-  }
-  .grid-container2 {
-    grid-template-columns: 1fr;
-  }
 }
-
-@media (max-width: 568px) {
-  .pimg1,
-  .pimg2,
-  .pimg3,
-  .pimg4,
-  .pimg5 {
-    background-attachment: scroll;
+@media (max-width: 800px) {
+  .slogan {
+    font-size: 1.8rem;
   }
-}
 
-@media (max-width: 568px) {
-  .ptext .border {
-    padding: 2px;
+  .donatebutton a {
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    font-size: 22px;
+    letter-spacing: 8px;
+  }
+
+  @media (max-width: 568px) {
+    .pimg1,
+    .pimg2,
+    .pimg3 {
+      background-attachment: scroll;
+    }
+  }
+
+  @media (max-width: 568px) {
+    .ptext {
+      font-size: 32px;
+      top: 55%;
+    }
+    .picons {
+      font-size: 28px;
+    }
   }
 }

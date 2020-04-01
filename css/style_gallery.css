@@ -127,8 +127,7 @@ html {
 .pimg1,
 .pimg2,
 .pimg3,
-.pimg4,
-.pimg5 {
+.pimg4 {
   position: relative;
   opacity: 0.95;
   background-position: center;
@@ -136,8 +135,8 @@ html {
   background-repeat: no-repeat;
 
   /* fixed = parallax
-     scroll = normal
-  */
+       scroll = normal
+    */
   background-attachment: fixed;
 }
 
@@ -150,29 +149,30 @@ html {
   width: 64px;
   height: 64px;
 }
+
 .pimg1 {
-  background-image: url('../img/aboutus_cover.JPG');
+  background-image: url('../img/gallerycover.JPG');
   min-height: 100%;
 }
 
 .pimg2 {
-  background-image: url('../img/aboutus_sectionone.jpg');
+  background-image: url('../img/gallery_sectionone.jpg');
   min-height: 400px;
 }
 
 .pimg3 {
-  background-image: url('../img/aboutus_sectiontwo.JPG');
+  background-image: url('../img/gallery_sectiontwo.JPG');
   min-height: 400px;
 }
 
 .pimg4 {
-  background-image: url('../img/aboutus_sectionthree.jpg');
+  background-image: url('../img/gallery_sectionthree.jpg');
   min-height: 400px;
 }
 
-.pimg5 {
-  background-image: url('../img/aboutus_sectionfour.JPG');
-  min-height: 400px;
+.newsimage img {
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -226,26 +226,46 @@ html {
   text-shadow: 3px 3px 3px #000000;
 }
 
-.grid-container {
+.datebar {
+  top: 0;
+  z-index: 2;
+  display: inline;
+  width: 100%;
+  height: 60px;
+}
+
+.datebar ul {
+  display: inline;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+.datebar ul li {
+  padding: 1rem;
+}
+
+.datebar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.7rem;
+  font-size: 22px;
+}
+
+/* Section C */
+
+.section-c .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 16px;
+  grid-template-columns: repeat(5, 1fr);
 }
 
-.grid-container2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-item2 {
-}
-
-.googlemaps_normal {
-  display: block;
-}
-
-.googlemaps_small {
-  display: none;
+.section-c .gallery img,
+.section-c .gallery a {
+  width: 100%;
+  height: 100%;
 }
 
 #main-foot {
@@ -257,37 +277,12 @@ html {
   height: 20px;
 }
 
-@media (max-width: 768px) {
-  .googlemaps_normal {
-    display: none;
-  }
-
-  .googlemaps_small {
-    display: block;
-  }
-  .grid-container2 {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 1580px) {
   .navbar {
     display: none;
   }
-
+}
 @media (max-width: 800px) {
-  .googlemaps_normal {
-    display: none;
-  }
-
-  .googlemaps_small {
-    display: block;
-  }
-  .grid-container2 {
-    grid-template-columns: 1fr;
-  }
-
-  
   .slogan {
     font-size: 1.8rem;
   }
@@ -304,9 +299,7 @@ html {
   @media (max-width: 568px) {
     .pimg1,
     .pimg2,
-    .pimg3,
-    .pimg4,
-    .pimg5 {
+    .pimg3 {
       background-attachment: scroll;
     }
   }
@@ -319,5 +312,11 @@ html {
     .picons {
       font-size: 28px;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .section-c .gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

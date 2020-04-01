@@ -15,6 +15,7 @@
   color: black;
   font-size: 26px;
   font-weight: 700;
+  text-shadow: 2px 2px 4px black;
 }
 
 .languageicons a:hover {
@@ -35,6 +36,7 @@
   list-style: none;
   width: 100%;
   justify-content: center;
+  text-shadow: 2px 2px 4px black;
 }
 
 .navbar ul li {
@@ -56,9 +58,9 @@
 
 .slogan {
   position: absolute;
-  left: 80%;
-  transform: translate(-80%, 0);
-  top: 82%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 75%;
   text-align: center;
   color: #000;
   font-size: 3rem;
@@ -179,17 +181,31 @@ html {
 
 .ptext {
   position: absolute;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 52px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 4px #000000;
+  line-height: 45px;
+}
+
+.picons {
+  position: absolute;
   top: 50%;
   width: 100%;
   text-align: center;
-  color: #000;
-  font-size: 27px;
+  color: rgb(255, 255, 255);
+  font-size: 44px;
   letter-spacing: 8px;
   text-transform: uppercase;
+
+  line-height: 40px;
 }
 
 .ptext .border {
-  background-color: #111;
   color: #fff;
   padding: 20px;
 }
@@ -216,39 +232,41 @@ html {
   height: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1580px) {
   .navbar {
     display: none;
   }
+
+@media (max-width: 800px) {
+
   .slogan {
-   
-    left: 50%;
-    transform: translate(-50%, 0);
     font-size: 1.8rem;
-    
   }
 
   .donatebutton a {
-    
     top: 75%;
     left: 50%;
     transform: translate(-50%, 0);
-    
+
     font-size: 22px;
     letter-spacing: 8px;
-    
-}
-
-@media (max-width: 568px) {
-  .pimg1,
-  .pimg2,
-  .pimg3 {
-    background-attachment: scroll;
   }
-}
 
-@media (max-width: 568px) {
-  .ptext .border {
-    padding: 2px;
+  @media (max-width: 568px) {
+    .pimg1,
+    .pimg2,
+    .pimg3 {
+      background-attachment: scroll;
+    }
+  }
+
+  @media (max-width: 568px) {
+    .ptext {
+      font-size: 32px;
+      top: 55%;
+    }
+    .picons {
+      font-size: 28px;
+    }
   }
 }
