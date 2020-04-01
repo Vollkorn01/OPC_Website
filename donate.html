@@ -200,6 +200,20 @@
       src="https://widget.raisenow.com/widgets/lema/obrob-0ef8/js/dds-init-widget-en.js"
       type="text/javascript"
     ></script>
+	<script type="text/javascript">
+		(function foo(){
+			var elem = document.getElementById("lema-container");
+			if(elem)
+			{
+				elem.style.margin = "auto";
+			}
+			else
+			{
+				setTimeout(foo,100);
+			}
+		}
+		)();
+	</script>
   </body>
   <footer id="main-foot">
     Copyright &copy; 2020
