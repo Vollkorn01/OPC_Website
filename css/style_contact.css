@@ -151,17 +151,17 @@ html {
 }
 
 .pimg1 {
-  background-image: url('../img/contactcover.JPG');
+  background-image: url('../img/contactcover.jpg');
   min-height: 100%;
 }
 
 .pimg2 {
-  background-image: url('../img/contact_sectionone.jpg');
+  background-image: url('../img/contact_sectionone.JPG');
   min-height: 400px;
 }
 
 .pimg3 {
-  background-image: url('../img/contact_sectiontwo.jpg');
+  background-image: url('../img/contact_sectiontwo.JPG');
   min-height: 400px;
 }
 
