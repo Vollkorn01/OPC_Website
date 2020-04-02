@@ -127,8 +127,7 @@ html {
 .pimg1,
 .pimg2,
 .pimg3,
-.pimg4,
-.pimg5 {
+.pimg4 {
   position: relative;
   opacity: 0.95;
   background-position: center;
@@ -136,8 +135,8 @@ html {
   background-repeat: no-repeat;
 
   /* fixed = parallax
-     scroll = normal
-  */
+               scroll = normal
+            */
   background-attachment: fixed;
 }
 
@@ -150,29 +149,30 @@ html {
   width: 64px;
   height: 64px;
 }
+
 .pimg1 {
-  background-image: url('../img/aboutus_cover.JPG');
+  background-image: url('../img/projectscover.JPG');
   min-height: 100%;
 }
 
 .pimg2 {
-  background-image: url('../img/aboutus_sectionone.jpg');
+  background-image: url('../img/projects_sectionone.JPG');
   min-height: 400px;
 }
 
 .pimg3 {
-  background-image: url('../img/aboutus_sectiontwo.JPG');
+  background-image: url('../img/projects_sectiontwo.JPG');
   min-height: 400px;
 }
 
 .pimg4 {
-  background-image: url('../img/aboutus_sectionthree.jpg');
+  background-image: url('../img/gallery_sectionthree.jpg');
   min-height: 400px;
 }
 
-.pimg5 {
-  background-image: url('../img/aboutus_sectionfour.JPG');
-  min-height: 400px;
+.newsimage img {
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -226,26 +226,66 @@ html {
   text-shadow: 3px 3px 3px #000000;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 16px;
+.datebar {
+  top: 0;
+  z-index: 2;
+  display: inline;
+  width: 100%;
+  height: 60px;
+}
+
+.datebar ul {
+  display: inline;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+.datebar ul li {
+  padding: 1rem;
+}
+
+.datebar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.7rem;
+  font-size: 22px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+.boxes div {
+  font-size: 2rem;
+  border: 3px #fff solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  transition: all 0.8s ease-out;
+}
+.boxes div:hover {
+  padding: 0.5rem 8rem;
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+.boxes div:hover span {
+  color: rgb(255, 255, 255);
+}
+
+.newsimage img {
+  max-width: 100%;
+  height: auto;
 }
 
 .grid-container2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-item2 {
-}
-
-.googlemaps_normal {
-  display: block;
-}
-
-.googlemaps_small {
-  display: none;
 }
 
 #main-foot {
@@ -257,19 +297,6 @@ html {
   height: 20px;
 }
 
-@media (max-width: 800px) {
-  .googlemaps_normal {
-    display: none;
-  }
-
-  .googlemaps_small {
-    display: block;
-  }
-  .grid-container2 {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 1580px) {
   .navbar {
     display: none;
@@ -277,19 +304,12 @@ html {
 }
 
 @media (max-width: 800px) {
-  .googlemaps_normal {
-    display: none;
-  }
-
-  .googlemaps_small {
-    display: block;
-  }
-  .grid-container2 {
-    grid-template-columns: 1fr;
-  }
-
   .slogan {
     font-size: 1.8rem;
+  }
+
+  .grid-container2 {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .donatebutton a {
@@ -300,24 +320,22 @@ html {
     font-size: 22px;
     letter-spacing: 8px;
   }
-}
 
-@media (max-width: 568px) {
-  .pimg1,
-  .pimg2,
-  .pimg3,
-  .pimg4,
-  .pimg5 {
-    background-attachment: scroll;
+  @media (max-width: 568px) {
+    .pimg1,
+    .pimg2,
+    .pimg3 {
+      background-attachment: scroll;
+    }
   }
-}
 
-@media (max-width: 568px) {
-  .ptext {
-    font-size: 32px;
-    top: 55%;
-  }
-  .picons {
-    font-size: 28px;
+  @media (max-width: 568px) {
+    .ptext {
+      font-size: 32px;
+      top: 55%;
+    }
+    .picons {
+      font-size: 28px;
+    }
   }
 }
