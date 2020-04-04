@@ -167,7 +167,7 @@ html {
 }
 
 .pimg4 {
-  background-image: url('../img/gallery_sectionthree.JPG');
+  background-image: url('../img/gallery_sectionfive.JPG');
   min-height: 400px;
 }
 
@@ -293,6 +293,11 @@ html {
   }
 }
 @media (max-width: 800px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+
   .slogan {
     font-size: 1.8rem;
   }

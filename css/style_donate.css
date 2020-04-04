@@ -270,6 +270,11 @@ html {
   }
 }
 @media (max-width: 800px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+
   .slogan {
     font-size: 1.8rem;
   }

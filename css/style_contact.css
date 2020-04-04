@@ -302,6 +302,11 @@ html {
 }
 
 @media (max-width: 800px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+
   .googlemaps_normal {
     display: none;
   }
