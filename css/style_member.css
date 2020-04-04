@@ -12,14 +12,14 @@
 
 .languageicons a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 26px;
   font-weight: 700;
   text-shadow: 2px 2px 4px black;
 }
 
 .languageicons a:hover {
-  color: white;
+  color: black;
 }
 
 .navbar {

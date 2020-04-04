@@ -236,9 +236,9 @@ html {
   .navbar {
     display: none;
   }
+}
 
 @media (max-width: 800px) {
-
   .slogan {
     font-size: 1.8rem;
   }
@@ -251,22 +251,22 @@ html {
     font-size: 22px;
     letter-spacing: 8px;
   }
+}
 
-  @media (max-width: 568px) {
-    .pimg1,
-    .pimg2,
-    .pimg3 {
-      background-attachment: scroll;
-    }
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
   }
+}
 
-  @media (max-width: 568px) {
-    .ptext {
-      font-size: 32px;
-      top: 55%;
-    }
-    .picons {
-      font-size: 28px;
-    }
+@media (max-width: 568px) {
+  .ptext {
+    font-size: 32px;
+    top: 55%;
+  }
+  .picons {
+    font-size: 28px;
   }
 }

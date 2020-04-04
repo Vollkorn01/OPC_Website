@@ -127,7 +127,8 @@ html {
 .pimg1,
 .pimg2,
 .pimg3,
-.pimg4 {
+.pimg4,
+.pimg5 {
   position: relative;
   opacity: 0.95;
   background-position: center;
@@ -166,7 +167,12 @@ html {
 }
 
 .pimg4 {
-  background-image: url('../img/gallery_sectionthree.jpg');
+  background-image: url('../img/gallery_sectionthree.JPG');
+  min-height: 400px;
+}
+
+.pimg5 {
+  background-image: url('../img/gallery_sectionfour.JPG');
   min-height: 400px;
 }
 
@@ -268,6 +274,10 @@ html {
   height: 100%;
 }
 
+.downloadlinks a {
+  color: black;
+}
+
 #main-foot {
   text-align: center;
   line-height: 20px;
@@ -299,7 +309,9 @@ html {
   @media (max-width: 568px) {
     .pimg1,
     .pimg2,
-    .pimg3 {
+    .pimg3,
+    .pimg4,
+    .pimg5 {
       background-attachment: scroll;
     }
   }
