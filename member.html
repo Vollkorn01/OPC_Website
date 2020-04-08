@@ -215,7 +215,7 @@
         </select></label
       >
     </p>
-    <div class="captchadiv" data-netlify-recaptcha="true"></div>
+    <div data-netlify-recaptcha="true"></div>
         <p>
           <button type="submit">Send</button>
         </p>
@@ -239,6 +239,16 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+      (function gcaptcha() {
+        var elem = document.getElementById('g-recaptcha');
+        if (elem) {
+          elem.style.margin = 'auto';
+        } else {
+          setTimeout(gcaptcha, 100);
+        }
+      })();
+    </script>
   </body>
   <footer id="main-foot">
     Copyright &copy; 2020
