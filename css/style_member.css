@@ -255,6 +255,10 @@ html {
   font-size: 22px;
 }
 
+.g-recaptcha {
+  margin: auto;
+}
+
 #main-foot {
   text-align: center;
   line-height: 20px;
