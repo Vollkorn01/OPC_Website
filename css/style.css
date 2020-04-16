@@ -268,10 +268,29 @@ html {
 
 @media (max-width: 568px) {
   .ptext {
-    font-size: 32px;
-    top: 55%;
+    font-size: 24px;
+    top: 34%;
   }
+
+  .slogan {
+    top: 70%;
+
+    font-size: 18px;
+    letter-spacing: 10px;
+  }
+
+  body,
+  html {
+    font-size: 10px;
+  }
+
   .picons {
     font-size: 28px;
+  }
+}
+
+@media (max-height: 500px) {
+  .icons {
+    font-size: 20px;
   }
 }

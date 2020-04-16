@@ -291,22 +291,41 @@ html {
     font-size: 22px;
     letter-spacing: 8px;
   }
+}
 
-  @media (max-width: 568px) {
-    .pimg1,
-    .pimg2,
-    .pimg3 {
-      background-attachment: scroll;
-    }
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 568px) {
+  .ptext {
+    font-size: 24px;
+    top: 34%;
   }
 
-  @media (max-width: 568px) {
-    .ptext {
-      font-size: 32px;
-      top: 55%;
-    }
-    .picons {
-      font-size: 28px;
-    }
+  .slogan {
+    top: 70%;
+
+    font-size: 18px;
+    letter-spacing: 10px;
+  }
+
+  body,
+  html {
+    font-size: 10px;
+  }
+
+  .picons {
+    font-size: 28px;
+  }
+}
+
+@media (max-height: 500px) {
+  .icons {
+    font-size: 20px;
   }
 }

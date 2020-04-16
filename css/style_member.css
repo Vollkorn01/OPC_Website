@@ -122,6 +122,7 @@ html {
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
+  overflow-x: hidden;
 }
 
 .pimg1,
@@ -305,15 +306,34 @@ html {
       background-attachment: scroll;
     }
   }
+}
 
-  @media (max-width: 568px) {
-    .ptext {
-      font-size: 32px;
-      top: 55%;
-    }
-    .picons {
-      font-size: 28px;
-    }
+@media (max-width: 568px) {
+  .ptext {
+    font-size: 24px;
+    top: 34%;
+  }
+
+  .slogan {
+    top: 70%;
+
+    font-size: 18px;
+    letter-spacing: 10px;
+  }
+
+  body,
+  html {
+    font-size: 10px;
+  }
+
+  .picons {
+    font-size: 28px;
+  }
+}
+
+@media (max-height: 500px) {
+  .icons {
+    font-size: 20px;
   }
 }
 

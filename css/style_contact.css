@@ -286,6 +286,10 @@ html {
   display: none;
 }
 
+.googlemaps_verysmall {
+  display: none;
+}
+
 #main-foot {
   text-align: center;
   line-height: 20px;
@@ -314,6 +318,10 @@ html {
   .googlemaps_small {
     display: block;
   }
+
+  .googlemaps_verysmall {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
@@ -329,23 +337,55 @@ html {
     font-size: 22px;
     letter-spacing: 8px;
   }
+}
 
-  @media (max-width: 568px) {
-    .pimg1,
-    .pimg2,
-    .pimg3 {
-      background-attachment: scroll;
-    }
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 568px) {
+  .ptext {
+    font-size: 24px;
+    top: 34%;
   }
 
-  @media (max-width: 568px) {
-    .ptext {
-      font-size: 32px;
-      top: 55%;
-    }
-    .picons {
-      font-size: 28px;
-    }
+  .slogan {
+    top: 70%;
+
+    font-size: 18px;
+    letter-spacing: 10px;
+  }
+
+  body,
+  html {
+    font-size: 10px;
+  }
+
+  .picons {
+    font-size: 28px;
+  }
+}
+
+@media (max-height: 500px) {
+  .icons {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 340px) {
+  .googlemaps_normal {
+    display: none;
+  }
+
+  .googlemaps_small {
+    display: none;
+  }
+  .googlemaps_verysmall {
+    display: block;
   }
 }
 
