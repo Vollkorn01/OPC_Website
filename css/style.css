@@ -223,6 +223,13 @@ html {
   height: 100%;
 }
 
+.ghanaicon {
+  background: url('../img/Ghana.png');
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+}
+
 #main-foot {
   text-align: center;
   line-height: 20px;
