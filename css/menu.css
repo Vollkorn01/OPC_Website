@@ -20,7 +20,6 @@
 }
 
 .menu-wrap .hamburger {
-  
   width: 40px;
   height: 60px;
   padding: 1rem;
@@ -28,7 +27,7 @@
   display: none;
   align-items: center;
   justify-content: center;
-  
+
   text-align: center;
 }
 
@@ -39,7 +38,7 @@
   position: relative;
   width: 100%;
   height: 4px;
-  background-color:black;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,7 +73,6 @@
 .menu-wrap .toggler:checked + .hamburger > div:after {
   top: 0;
   transform: rotate(90deg);
-  
 }
 
 /* Rotate on Hover when checked */
@@ -146,10 +144,10 @@
 }
 
 @media (max-width: 1580px) {
-    .menu-wrap {
-      visibility: visible;
-    }
-    .menu-wrap .hamburger {
-        display: flex;
-
-    }
+  .menu-wrap {
+    visibility: visible;
+  }
+  .menu-wrap .hamburger {
+    display: flex;
+  }
+}
