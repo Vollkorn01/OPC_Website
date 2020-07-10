@@ -142,12 +142,14 @@ html {
 .logocontainer {
   background-image: url('../img/opc_newlogo_small.png');
   background-repeat: no-repeat;
-
+  display: absolute;
   position: absolute;
   left: 64px;
   top: 16px;
   width: 64px;
   height: 64px;
+  opacity: 1;
+  z-index: 3;
 }
 
 .logocontainer a {
@@ -270,6 +272,14 @@ html {
 
     font-size: 22px;
     letter-spacing: 8px;
+  }
+
+  .languageicons {
+    position: fixed;
+  }
+
+  .logocontainer {
+    position: fixed;
   }
 }
 
