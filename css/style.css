@@ -273,14 +273,6 @@ html {
     font-size: 22px;
     letter-spacing: 8px;
   }
-
-  .languageicons {
-    position: fixed;
-  }
-
-  .logocontainer {
-    position: fixed;
-  }
 }
 
 @media (max-width: 568px) {
