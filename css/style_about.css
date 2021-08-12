@@ -1,125 +1,125 @@
 .container {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .languageicons {
-  position: absolute;
-  right: 20px;
-  top: 32px;
-  z-index: 5;
+	position: absolute;
+	right: 20px;
+	top: 32px;
+	z-index: 5;
 }
 
 .languageicons a {
-  text-decoration: none;
-  color: white;
-  font-size: 26px;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px black;
+	text-decoration: none;
+	color: white;
+	font-size: 26px;
+	font-weight: 700;
+	text-shadow: 2px 2px 4px black;
 }
 
 .languageicons a:hover {
-  color: black;
+	color: black;
 }
 
 .navbar {
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  display: flex;
-  width: 100%;
-  height: 60px;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	display: flex;
+	width: 100%;
+	height: 60px;
 }
 
 .navbar ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: center;
-  text-shadow: 2px 2px 4px black;
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: center;
+	text-shadow: 2px 2px 4px black;
 }
 
 .navbar ul li {
-  padding: 1rem;
+	padding: 1rem;
 }
 
 .navbar ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #f4f4f4;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0.7rem;
-  font-size: 22px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #f4f4f4;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 0.7rem;
+	font-size: 22px;
 }
 
 .navbar ul li a:hover {
-  color: black;
+	color: black;
 }
 
 .slogan {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  top: 75%;
-  text-align: center;
-  color: #f4f4f4;
-  font-size: 3rem;
-  letter-spacing: 10px;
-  font-weight: 700;
-  text-shadow: 4px 4px 4px #000000;
-  line-height: 1;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	top: 75%;
+	text-align: center;
+	color: #f4f4f4;
+	font-size: 3rem;
+	letter-spacing: 10px;
+	font-weight: 700;
+	text-shadow: 4px 4px 4px #000000;
+	line-height: 1;
 }
 
 i.fab {
-  color: black;
+	color: black;
 }
 
 i.fab:hover {
-  color: white;
+	color: white;
 }
 
 .icons {
-  margin: auto;
+	margin: auto;
 }
 
 .icons a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .donatebutton a {
-  font-weight: 600;
-  text-decoration: none;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.322);
-  border: 5px solid black;
-  border-radius: 15px;
-  position: absolute;
-  top: 75%;
-  left: 76%;
-  transform: translate(-76%, 0);
-  text-align: center;
-  padding-left: 6px;
-  text-align: center;
-  color: #000;
-  font-size: 27px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.322);
+	border: 5px solid black;
+	border-radius: 15px;
+	position: absolute;
+	top: 75%;
+	left: 76%;
+	transform: translate(-76%, 0);
+	text-align: center;
+	padding-left: 6px;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
 }
 
 .donatebutton a:hover {
-  color: white;
-  background-color: black;
+	color: white;
+	background-color: black;
 }
 
 body,
 html {
-  height: 100%;
-  margin: 0;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  line-height: 1.8em;
-  color: #666;
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
 }
 
 .pimg1,
@@ -127,236 +127,244 @@ html {
 .pimg3,
 .pimg4,
 .pimg5 {
-  position: relative;
-  opacity: 0.95;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+	position: relative;
+	opacity: 0.95;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 
-  /* fixed = parallax
+	/* fixed = parallax
      scroll = normal
   */
-  background-attachment: fixed;
+	background-attachment: fixed;
 }
 
 .logocontainer {
-  background-image: url('../img/opc_newlogo_small.png');
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 64px;
-  top: 16px;
-  width: 64px;
-  height: 64px;
+	background-image: url('../img/opc_newlogo_small.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 64px;
+	top: 16px;
+	width: 64px;
+	height: 64px;
 }
 
 .logocontainer a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
 }
 
 .pimg1 {
-  background-image: url('../img/aboutus_cover.JPG');
-  min-height: 100%;
+	background-image: url('../img/aboutus_cover.JPG');
+	min-height: 100%;
 }
 
 .pimg2 {
-  background-image: url('../img/aboutus_sectionone.jpg');
-  min-height: 400px;
+	background-image: url('../img/aboutus_sectionone.jpg');
+	min-height: 400px;
 }
 
 .pimg3 {
-  background-image: url('../img/aboutus_sectiontwo.JPG');
-  min-height: 400px;
+	background-image: url('../img/aboutus_sectiontwo.JPG');
+	min-height: 400px;
 }
 
 .pimg4 {
-  background-image: url('../img/aboutus_sectionthree.jpg');
-  min-height: 400px;
+	background-image: url('../img/aboutus_sectionthree.jpg');
+	min-height: 400px;
 }
 
 .pimg5 {
-  background-image: url('../img/aboutus_sectionfour.JPG');
-  min-height: 400px;
+	background-image: url('../img/aboutus_sectionfour.JPG');
+	min-height: 400px;
 }
 
 .section {
-  text-align: center;
-  padding: 50px 25px;
+	text-align: center;
+	padding: 50px 25px;
 }
 
 .section-light {
-  background-color: #f4f4f4;
-  color: rgba(0, 0, 0, 0.8);
+	background-color: #f4f4f4;
+	color: rgba(0, 0, 0, 1);
+}
+
+.section-light a {
+	color: rgba(0, 0, 0, 1);
 }
 
 .section-dark {
-  background-color: #282e34;
-  color: #ddd;
+	background-color: #282e34;
+	color: #ddd;
+}
+
+.section-dark a {
+	color: #ddd;
 }
 
 .ptext {
-  position: absolute;
-  top: 60%;
-  width: 100%;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 52px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  text-shadow: 4px 4px 4px #000000;
-  line-height: 45px;
+	position: absolute;
+	top: 60%;
+	width: 100%;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 52px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	text-shadow: 4px 4px 4px #000000;
+	line-height: 45px;
 }
 
 .picons {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 44px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 44px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
 
-  line-height: 40px;
+	line-height: 40px;
 }
 
 .ptext .border {
-  color: #fff;
-  padding: 20px;
+	color: #fff;
+	padding: 20px;
 }
 
 .ptext .border.trans {
-  background-color: transparent;
-  text-shadow: 3px 3px 3px #000000;
+	background-color: transparent;
+	text-shadow: 3px 3px 3px #000000;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 16px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 16px;
 }
 
 .grid-container2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-item2 {
 }
 
 .googlemaps_normal {
-  display: block;
+	display: block;
 }
 
 .googlemaps_small {
-  display: none;
+	display: none;
 }
 
 .googlemaps_verysmall {
-  display: none;
+	display: none;
 }
 
 #main-foot {
-  text-align: center;
-  line-height: 20px;
-  padding: 1rem;
-  background: #2b2b2b;
-  color: #fff;
-  height: 20px;
+	text-align: center;
+	line-height: 20px;
+	padding: 1rem;
+	background: #2b2b2b;
+	color: #fff;
+	height: 20px;
 }
 
 @media (max-width: 1580px) {
-  .navbar {
-    display: none;
-  }
+	.navbar {
+		display: none;
+	}
 }
 
 @media (max-width: 800px) {
-  body,
-  html {
-    font-size: 14px;
-  }
+	body,
+	html {
+		font-size: 14px;
+	}
 
-  .googlemaps_normal {
-    display: none;
-  }
+	.googlemaps_normal {
+		display: none;
+	}
 
-  .googlemaps_small {
-    display: block;
-  }
+	.googlemaps_small {
+		display: block;
+	}
 
-  .googlemaps_verysmall {
-    display: none;
-  }
+	.googlemaps_verysmall {
+		display: none;
+	}
 
-  .grid-container2 {
-    grid-template-columns: 1fr;
-  }
+	.grid-container2 {
+		grid-template-columns: 1fr;
+	}
 
-  .slogan {
-    font-size: 1.8rem;
-  }
+	.slogan {
+		font-size: 1.8rem;
+	}
 
-  .donatebutton a {
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, 0);
+	.donatebutton a {
+		top: 75%;
+		left: 50%;
+		transform: translate(-50%, 0);
 
-    font-size: 22px;
-    letter-spacing: 8px;
-  }
+		font-size: 22px;
+		letter-spacing: 8px;
+	}
 }
 
 @media (max-width: 568px) {
-  .pimg1,
-  .pimg2,
-  .pimg3,
-  .pimg4,
-  .pimg5 {
-    background-attachment: scroll;
-  }
+	.pimg1,
+	.pimg2,
+	.pimg3,
+	.pimg4,
+	.pimg5 {
+		background-attachment: scroll;
+	}
 }
 
 @media (max-width: 568px) {
-  .ptext {
-    font-size: 24px;
-    top: 34%;
-  }
+	.ptext {
+		font-size: 24px;
+		top: 34%;
+	}
 
-  .slogan {
-    top: 70%;
+	.slogan {
+		top: 70%;
 
-    font-size: 18px;
-    letter-spacing: 10px;
-  }
+		font-size: 18px;
+		letter-spacing: 10px;
+	}
 
-  body,
-  html {
-    font-size: 10px;
-  }
+	body,
+	html {
+		font-size: 10px;
+	}
 
-  .picons {
-    font-size: 28px;
-  }
+	.picons {
+		font-size: 28px;
+	}
 }
 
 @media (max-height: 500px) {
-  .icons {
-    font-size: 20px;
-  }
+	.icons {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 340px) {
-  .googlemaps_normal {
-    display: none;
-  }
+	.googlemaps_normal {
+		display: none;
+	}
 
-  .googlemaps_small {
-    display: none;
-  }
-  .googlemaps_verysmall {
-    display: block;
-  }
+	.googlemaps_small {
+		display: none;
+	}
+	.googlemaps_verysmall {
+		display: block;
+	}
 }
