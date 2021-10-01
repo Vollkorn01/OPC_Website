@@ -187,6 +187,11 @@ html {
 	height: 65%;
 }
 
+.newsimage3 img {
+	width: 45%;
+	height: 45%;
+}
+
 .section {
 	text-align: center;
 	padding: 50px 40px;
@@ -355,6 +360,11 @@ html {
 		width: 90%;
 		height: 90%;
 	}
+
+	.newsimage3 img {
+		width: 80%;
+		height: 80%;
+	}
 }
 
 @media (max-width: 568px) {
@@ -388,6 +398,11 @@ html {
 	}
 
 	.newsimage2 img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.newsimage3 img {
 		width: 100%;
 		height: 100%;
 	}

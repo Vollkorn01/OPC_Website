@@ -135,8 +135,8 @@ html {
 	background-repeat: no-repeat;
 
 	/* fixed = parallax
-             scroll = normal
-          */
+               scroll = normal
+            */
 	background-attachment: fixed;
 }
 
@@ -158,17 +158,17 @@ html {
 }
 
 .pimg1 {
-	background-image: url('../img/contactcover.jpg');
+	background-image: url('../img/thanks_OPC_picture.JPG');
 	min-height: 100%;
 }
 
 .pimg2 {
-	background-image: url('../img/contact_sectionone.JPG');
+	background-image: url('../img/projects_sectionone.JPG');
 	min-height: 400px;
 }
 
 .pimg3 {
-	background-image: url('../img/contact_sectiontwo.JPG');
+	background-image: url('../img/projects_sectiontwo.JPG');
 	min-height: 400px;
 }
 
@@ -180,6 +180,16 @@ html {
 .newsimage img {
 	max-width: 100%;
 	height: auto;
+}
+
+.newsimage2 img {
+	width: 65%;
+	height: 65%;
+}
+
+.newsimage3 img {
+	width: 45%;
+	height: 45%;
 }
 
 .section {
@@ -278,7 +288,6 @@ html {
 	margin-top: 1rem;
 }
 .boxes div {
-	max-width: 55%;
 	font-size: 2rem;
 	border: 3px #fff solid;
 	padding: 1.5rem 2.5rem;
@@ -294,16 +303,14 @@ html {
 	color: rgb(255, 255, 255);
 }
 
-.googlemaps_normal {
-	display: block;
+.newsimage img {
+	max-width: 100%;
+	height: auto;
 }
 
-.googlemaps_small {
-	display: none;
-}
-
-.googlemaps_verysmall {
-	display: none;
+.grid-container2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 #main-foot {
@@ -327,22 +334,17 @@ html {
 		font-size: 14px;
 	}
 
-	.googlemaps_normal {
-		display: none;
-	}
-
-	.googlemaps_small {
-		display: block;
-	}
-
-	.googlemaps_verysmall {
-		display: none;
-	}
-}
-
-@media (max-width: 800px) {
 	.slogan {
 		font-size: 1.8rem;
+	}
+
+	.grid-container2 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.grid-item2 img {
+		width: 50%;
+		height: auto;
 	}
 
 	.donatebutton a {
@@ -352,6 +354,16 @@ html {
 
 		font-size: 22px;
 		letter-spacing: 8px;
+	}
+
+	.newsimage2 img {
+		width: 90%;
+		height: 90%;
+	}
+
+	.newsimage3 img {
+		width: 80%;
+		height: 80%;
 	}
 }
 
@@ -384,29 +396,20 @@ html {
 	.picons {
 		font-size: 28px;
 	}
+
+	.newsimage2 img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.newsimage3 img {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 @media (max-height: 500px) {
 	.icons {
 		font-size: 20px;
-	}
-}
-
-@media (max-width: 340px) {
-	.googlemaps_normal {
-		display: none;
-	}
-
-	.googlemaps_small {
-		display: none;
-	}
-	.googlemaps_verysmall {
-		display: block;
-	}
-}
-
-@media (max-width: 800px) {
-	.section-c .gallery {
-		grid-template-columns: repeat(2, 1fr);
 	}
 }
