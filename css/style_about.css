@@ -3,11 +3,86 @@
 	height: 100%;
 }
 
+h2 {
+	font-size: 2.5rem;
+	line-height: 1.3;
+	padding:80px 0px;
+	margin: 0px;
+}
+
+p {
+	font-size: 16px;
+	margin: 0px 0px 40px 0px;
+	line-height: 1.5;
+}
+
 .languageicons {
 	position: absolute;
 	right: 20px;
 	top: 32px;
 	z-index: 5;
+}
+
+.homepage-title-container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+}
+
+.homepage-subtitle-container {
+	position: absolute;
+	top: 65%;
+	width: 100%;
+	display: flex;
+}
+
+.homepage-title {
+	margin: 40px 160px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 40px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 1.3;
+}
+
+@media (max-width: 1000px) {
+	.homepage-title {
+		margin: 40px 80px;
+		font-size: 30px;
+		letter-spacing: 4px;
+	}
+}
+
+@media (max-width: 500px) {
+	.homepage-title {
+		margin: 40px 20px;
+		font-size: 24px;
+		letter-spacing: 4px;
+	}
+}
+
+.homepage-subtitle {
+	margin: 0px 160px;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+	font-weight: 100;
+	line-height: 1.3;
+}
+@media (max-width: 1000px) {
+	.homepage-subtitle {
+		margin: 0px 80px;
+	}
+}
+
+@media (max-width: 500px) {
+	.homepage-subtitle {
+		margin-left: 20px;
+		margin-right:20px;
+		font-size: 16px;
+	}
 }
 
 .languageicons a {
@@ -157,22 +232,30 @@ html {
 }
 
 .pimg1 {
-	background-image: url('../img/aboutus_cover.JPG');
+	background:linear-gradient(
+		rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)
+	  ), url('../img/aboutus/aboutus_title.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	min-height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .pimg2 {
-	background-image: url('../img/aboutus_sectionone.jpg');
+	background-image: url('../img/aboutus/busua.jpg');
 	min-height: 400px;
 }
 
 .pimg3 {
-	background-image: url('../img/aboutus_sectiontwo.JPG');
+	background-image: url('../img/aboutus/mankessim.jpg');
 	min-height: 400px;
 }
 
 .pimg4 {
-	background-image: url('../img/aboutus_sectionthree.jpg');
+	background-image: url('../img/aboutus/team.jpg');
 	min-height: 400px;
 }
 
@@ -183,7 +266,7 @@ html {
 
 .section {
 	text-align: center;
-	padding: 50px 25px;
+	padding: 0px 80px 80px 80px;
 }
 
 .section-light {
@@ -256,10 +339,12 @@ html {
 
 .googlemaps_normal {
 	display: block;
+	padding-top: 40px;
 }
 
 .googlemaps_small {
 	display: none;
+	padding-top: 40px;
 }
 
 .googlemaps_verysmall {

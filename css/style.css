@@ -299,6 +299,8 @@ html {
 	border-color: #000000;
 }
 
+
+
 .homepage-project-img {
 	height: 200px;
 	width: auto;
@@ -337,7 +339,6 @@ html {
 	min-height: 100%;
 	display: flex;
 	align-items: center;
-
 }
 
 .pimg2 {
