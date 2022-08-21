@@ -35,11 +35,11 @@
           toggler_id: "vanilla-i18n-toggler",
           default_language: languages[0],
         }
-      ).run();
-
-      var userLang = navigator.language || navigator.userLanguage; 
+      ).run().then(() => {
+        var userLang = navigator.language || navigator.userLanguage; 
           alert ("The language is: " + userLang);
           localStorage.setItem('jocular-gecko-03515d.netlify.app-vanilla-i18n', userLang);
+      });
     </script>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
