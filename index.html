@@ -24,7 +24,7 @@
     <script>
       const languages = [
         "English",
-        "Deutsch"
+        "de"
       ];
       new vanilla_i18n (
         languages,
@@ -36,6 +36,10 @@
           default_language: languages[0],
         }
       ).run();
+
+      var userLang = navigator.language || navigator.userLanguage; 
+          alert ("The language is: " + userLang);
+          localStorage.setItem('jocular-gecko-03515d.netlify.app-vanilla-i18n', userLang);
     </script>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
@@ -51,6 +55,10 @@
     />
   </head>
   <body>
+    <select id="vanilla-i18n-toggler">
+      <option>English</option>
+      <option>Deutsch</option>
+    </select>
     <div class="menu-wrap">
       <input type="checkbox" class="toggler" />
       <div class="hamburger"><div></div></div>
@@ -78,11 +86,6 @@
     </div> -->
 
     <div class="logocontainer"><a href="index.html"></a></div>
-    <select id="vanilla-i18n-toggler">
-      <option>English</option>
-      <option>Deutsch</option>
-    </select>
-
     <div class="container">
       <div class="pimg1">
         <nav class="navbar">
