@@ -23,7 +23,7 @@
     <script src="https://cdn.jsdelivr.net/gh/thealphadollar/vanilla-i18n/src/vanilla-i18n.min.js"></script>
     <script>
       const languages = [
-        "English",
+        "en",
         "de"
       ];
       new vanilla_i18n (
@@ -37,7 +37,6 @@
         }
       ).run().then(() => {
         var userLang = navigator.language || navigator.userLanguage; 
-          alert ("The language is: " + userLang);
           localStorage.setItem('jocular-gecko-03515d.netlify.app-vanilla-i18n', userLang);
       });
     </script>
@@ -55,10 +54,11 @@
     />
   </head>
   <body>
-    <select id="vanilla-i18n-toggler">
+  <!-- manual language selection -->
+    <!-- <select id="vanilla-i18n-toggler">
       <option>English</option>
       <option>de</option>
-    </select>
+    </select> -->
     <div class="menu-wrap">
       <input type="checkbox" class="toggler" />
       <div class="hamburger"><div></div></div>
@@ -108,7 +108,7 @@
             <i18n vanilla-i18n="homepage.title">We Empower Regenerative Leaders through our Educational Centres</i18n>
           </span>
           <span class="homepage-subtitle">
-            Obrobibini Peace Complex is a non-governmental organisation in Ghana that runs social entrepreneurship programs on sustainable farming and food processing
+            <i18n vanilla-i18n="homepage.subtitle"></i18n>Obrobibini Peace Complex is a non-governmental organisation in Ghana that runs social entrepreneurship programs on sustainable farming and food processing</i18n>
           </span>
         </div>
       </div>
